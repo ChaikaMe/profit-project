@@ -1,0 +1,129 @@
+/* MOBYLE HEADER STYLES */
+
+.nav {
+  display: none;
+}
+
+.address {
+  display: none;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header {
+  margin-top: 20px;
+}
+
+.social-list {
+  display: flex;
+  gap: 12px;
+}
+
+.social-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background: rgba(252, 249, 249, 0.1);
+  width: 44px;
+  height: 44px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background: rgba(252, 249, 249, 0.1); */
+}
+
+.social-icon {
+  fill: #fcf9f9;
+  line-height: 0;
+}
+
+.nav-open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-open-btn-icon {
+  stroke: #ecd979;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  background-color: var(--yellow, #ecd979);
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0%);
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-top: 20px;
+  /* padding-bottom: 40px; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-menu-close-btn-icon {
+  stroke: #1c2225;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* MOBILE MODAL STYLES */
