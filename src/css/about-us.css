@@ -1,0 +1,19 @@
+.about{
+    background-image: url('../img/orn-gray.png');
+    background-repeat: no-repeat;
+}
+
+.about-title{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.38;
+        letter-spacing: -0.03em;
+}
+
+.about-text{
+    color: rgba(252, 249, 249, 0.40);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.04px;
+}
