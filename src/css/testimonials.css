@@ -6,6 +6,7 @@
 }
 
 .container {
+  min-width: 320px;
   max-width: 375px;
 }
 
@@ -18,18 +19,23 @@
   margin-bottom: 40px;
 }
 
+.card {
+  display: flex;
+}
+
 .card-wrapper {
   position: relative;
   padding-top: 24px;
+  display: none;
 }
 
-.wrapper {
-  margin-bottom: 20px;
+.card-wrapper:first-child {
+  display: unset;
 }
 
 .card-list {
-  max-width: 336px;
-  padding: 54px 18px 18px;
+  min-width: 335px;
+  padding: 52px 18px 18px;
   border-radius: 4px;
   border: 1px solid rgba(252, 249, 249, 0.1);
 
@@ -49,14 +55,18 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
+  font-style: normal;
   text-align: center;
   margin-bottom: 8px;
 }
 
 .testimonials-text-card {
   max-width: 291px;
+
   font-size: 14px;
   font-weight: 400;
+  font-style: normal;
+  line-height: normal;
 
   text-align: center;
   color: rgba(252, 249, 249, 0.4);
@@ -75,7 +85,7 @@
 
   .card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
     justify-content: space-between;
     gap: 32px;
@@ -84,6 +94,11 @@
   .card-wrapper {
     position: relative;
     padding-top: 24px;
+    display: unset;
+  }
+
+  .card-wrapper:last-child {
+    display: none;
   }
 
   .wrapper {
@@ -91,7 +106,8 @@
   }
 
   .card-list {
-    min-height: 260px;
+    max-width: 336px;
+    min-height: 286px;
     /* width: calc((100% - 26px) / 2); */
   }
 
@@ -123,8 +139,14 @@
     gap: 26px;
   }
 
+  .card-wrapper:last-child {
+    display: unset;
+  }
+
   .card-list {
     max-width: 343px;
+    min-height: 285px;
+    padding-top: 51px;
   }
 
   .testimonials-text-card {
