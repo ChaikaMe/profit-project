@@ -21,6 +21,7 @@
 
 .card {
   display: flex;
+  min-width: 335px;
 }
 
 .card-wrapper {
