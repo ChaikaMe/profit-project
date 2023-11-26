@@ -110,7 +110,7 @@
   .mobile-menu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 274px;
     height: 100vh;
     z-index: 99999999;
@@ -200,7 +200,6 @@
   @media screen and (min-width: 768px) {
     .nav-open-btn {
       margin-left: 20px;
-      margin-right: 20px;
     }
 
     .burger {
@@ -227,6 +226,13 @@
 
     .mobile-menu-container {
       gap: 223px;
+    }
+
+    .mobile-menu-tel {
+      font-size: 14px;
+      line-height: 1.43;
+      max-width: 193px;
+      min-height: 48 px;
     }
 
     @media screen and (min-resolution: 192dpi),
