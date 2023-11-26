@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 100%;
+    margin: 0;
 }
 .about-container{
     min-width: 320px;
