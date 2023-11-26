@@ -4,8 +4,6 @@
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 100%;
-    margin-right: auto;
-        margin-left: auto;
 }
 .about-container{
     min-width: 320px;
@@ -15,6 +13,8 @@
 .container{
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-right: auto;
+        margin-left: auto;
 }
 .about-title{
         font-size: 32px;
@@ -29,7 +29,7 @@
         font-size: 14px;
         font-weight: 400;
         line-height: normal;
-        letter-spacing: -0.04px;
+        letter-spacing: -0.04em;
         margin-top: 20px;
 }
 .about-text:first-of-type{
@@ -68,6 +68,14 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 .about-container-text{
     display: flex;
 flex-direction: column;
+}
+.about-title{
+        font-size: 44px;
+        line-height: 1.45;
+}
+
+.about-text{
+    font-size: 16px;
 }
 }
 
