@@ -13,7 +13,7 @@
             <use href="../img/sprite.svg#icon-untitled"></use>
           </svg>
         </a>
-    </div>
+      </div>
 
       <picture>
         <!-- Desktop screen 1440px -->
@@ -63,17 +63,35 @@
       </div>
 
       <picture>
+        <!-- Desktop screen 1440px -->
         <source
-          media="(min-width: 768px)"
+          media="(min-width: 1440px)"
           srcset="
-          ../img/tablet/tb-map.jpg 1x,
-            ../img/tablet/tb-map@2x.jpg 2x
+          ../img/desctop_1440/ds14-maogroup.png 1x,
+          ../img/desctop_1440/ds14-maogroup@2x.png 2x
           "
           type="image/jpg"
         />
-        <img class="hero-img-map" src="../img/tablet/tb-map.jpg" alt="map Ukraine" width="139" height="171"/>
+        <!-- Desktop screen 1280px-->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+          ../img/desctop_1280/ds12-mapgroup.png   1x,
+          ../img/desctop_1280/ds12-mapgroup@2x.png 2x
+          "
+          type="image/jpg"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+          ../img/tablet/tb-mapgroup.png   1x,
+          ../img/tablet/tb-mapgroup@2x.png 2x
+          "
+          type="image/jpg"
+        />
+        <img class="hero-img-map" src="../img/tablet/tb-mapgroup.png" alt="map Ukraine" width="139" height="171"/>
       </picture>
-
     </div>
   </div>
 </section>
