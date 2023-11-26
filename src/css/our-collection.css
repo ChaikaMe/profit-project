@@ -1,10 +1,17 @@
 .our-collection {
-  background-image: url(../img/elements.png);
+  background-image: url(../img/mobile/mb-collection-orn.png);
   background-repeat: no-repeat;
-  background-position-x: -50%;
-  background-position-y: 50%;
+  background-position-x: 1%;
+  background-position-y: 12%;
 }
-
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .our-collection {
+    background-image: url(../img/mobile/mb-collection-orn@2x.png);
+    background-size: 72px 177px;
+  }
+}
 .our-collection-container {
   max-width: 375px;
   margin-left: auto;
@@ -32,10 +39,6 @@
   flex-direction: column;
 }
 
-/* .our-collection-products {
-  margin-top: 18px;
-  padding-bottom: 20px;
-} */
 .image-app-container {
   margin-bottom: 18px;
 }
@@ -62,6 +65,19 @@
 }
 
 @media screen and (min-width: 768px) {
+  .our-collection {
+    background-image: url(../img/tablet/tb-collection-orn.png);
+    background-position-x: 0%;
+    background-position-y: 16%;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .our-collection {
+      background-image: url(../img/tablet/tb-collection-orn@2x.png);
+      background-size: 114px 300px;
+    }
+  }
   .our-collection-container {
     max-width: 768px;
   }
@@ -102,6 +118,19 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .our-collection {
+    background-image: url(../img/desctop_1280/ds12-collection-orn.png);
+    background-position-x: 0%;
+    background-position-y: 27%;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .our-collection {
+      background-image: url(../img/desctop_1280/ds12-collection-orn@2x.png);
+      background-size: 169px 300px;
+    }
+  }
   .our-collection-container {
     max-width: 1280px;
   }
@@ -114,5 +143,10 @@
   .our-collection-item {
     width: calc((100% - 40px) / 3);
     max-width: 347px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our-collection-container {
+    max-width: 1440px;
   }
 }
