@@ -102,7 +102,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 justify-content: center;
     align-items: center;
     column-gap: 50px;
-    width: 1080px;
     margin-left: auto;
     margin-right: auto;
 }
