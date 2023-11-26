@@ -1,0 +1,151 @@
+/* mobile about */
+.about{
+   background-image: url('../img/mobile/mb-about-orn.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.about-container{
+    min-width: 320px;
+    max-width: 375px;
+   
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+}
+.about-title{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.38;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+}
+
+.about-text{
+    color: rgba(252, 249, 249, 0.40);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.04em;
+        margin-top: 20px;
+}
+.about-text:first-of-type{
+    margin-top: 0;
+}
+.about-image{
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .about {
+    background-image: url('../img/mobile/mb-about-orn@2x.png');
+    background-size: 250px 408px;  
+
+    }
+}
+
+/* Tablet about*/
+@media screen and (min-width: 768px) {
+    .about {
+        min-width: 768px;
+        background-image: url('../img/tablet/tb-about-orn.png');
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+ .container {
+        padding-left: 32px;
+        padding-right: 32px;
+        min-width: 768px;
+        }
+.about-image{
+    margin-top: 40px;
+}
+.about-container-text{
+    display: flex;
+flex-direction: column;
+}
+.about-title{
+        font-size: 44px;
+        line-height: 1.45;
+}
+
+.about-text{
+    font-size: 16px;
+}
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .about {
+        background-image: url('../img/tablet/tb-about-orn@2x.png');
+        background-size: 369px 484px;
+    }
+}
+
+/* Desctop about 1280 */
+@media screen and (min-width: 1280px){
+.about {
+    background-image: url('../img/desctop_1280/ts12-about-orn.png');
+    padding-top: 75px;
+    padding-bottom: 75px;
+    }
+
+.about-container{
+    display: flex;
+
+justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    min-width: 1280px;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+
+    .about-image{
+    margin-top: 0;
+}
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px){
+.about {
+        background-image: url('../img/desctop_1280/ts12-about-orn@2x.png');
+        background-size: 385px 484px;
+    }
+}
+
+/* Desctop about 1440 */
+@media screen and (min-width: 1440px) {
+    .about {
+        background-image: url('../img/desctop_1440/ds14-about-orn.png');
+    }
+
+.container{
+min-width: 1440px;
+}
+
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+screen and (min-resolution: 2dppx) and (min-width: 1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+    .about {
+        background-image: url('../img/desctop_1440/ds14-about-orn@2x.png');
+        background-size: 545px 484px;
+    }
+}}
