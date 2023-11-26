@@ -1,14 +1,17 @@
 /* mobile about */
 .about{
-    max-width: 375px;
-    background-image: url('../img/mobile/mb-about-orn.png');
+   background-image: url('../img/mobile/mb-about-orn.png');
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 100%;
-    margin-right: auto;
-        margin-left: auto;
+   
 }
-
+.about-container{
+    min-width: 320px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .container{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -38,16 +41,22 @@
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .about {
-        background-image: url('../img/mobile/mb-about-orn@2x.png');
+    background-image: url('../img/mobile/mb-about-orn@2x.png');
+    background-size: 250px 408px;  
+
     }
 }
 
 /* Tablet about*/
 @media screen and (min-width: 768px) {
     .about {
-        min-width: 768px;
+        
         background-image: url('../img/tablet/tb-about-orn.png');
     }
+
+.about-container{
+min-width: 768px;
+}
 
  .container {
             padding-top: 50px;
@@ -67,28 +76,31 @@ screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .about {
         background-image: url('../img/tablet/tb-about-orn@2x.png');
-        
+        background-size: 369px 484px;
     }
 }
 
 /* Desctop about 1280 */
 @media screen and (min-width: 1280px){
 .about {
-        min-width: 1280px;
+        
         background-image: url('../img/desctop_1280/ts12-about-orn.png');
     }
-.container {
+
+.about-container{
     display: flex;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    justify-content: center;
+min-width: 1280px;
+justify-content: center;
     align-items: center;
     column-gap: 50px;
     width: 1080px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
+.container {
+    padding:75px 32px;
+    }
 .about-image{
     margin-top: 0;
 }
@@ -99,15 +111,21 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1280px){
 .about {
         background-image: url('../img/desctop_1280/ts12-about-orn@2x.png');
+        background-size: 385px 484px;
     }
 }
 
 /* Desctop about 1440 */
 @media screen and (min-width: 1440px) {
     .about {
-        min-width: 1440px;
+        
         background-image: url('../img/desctop_1440/ds14-about-orn.png');
     }
+
+.about-container{
+min-width: 1440px;
+}
+
 .container{
     width: 1240px;
 }
@@ -118,5 +136,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1440px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
     .about {
         background-image: url('../img/desctop_1440/ds14-about-orn@2x.png');
+        background-size: 545px 484px;
     }
 }
