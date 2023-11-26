@@ -37,6 +37,7 @@
 }
 .about-image{
     margin-top: 50px;
+    border-radius: 4px;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -58,7 +59,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 
  .container {
-            padding: 50px 32px;
+        padding: 50px 32px;
         min-width: 768px;
         }
 .about-image{
