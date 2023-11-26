@@ -3,8 +3,6 @@
 .container {
   min-width: 320px;
   max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .nav {
@@ -20,6 +18,8 @@
   justify-content: space-between;
   align-items: center;
   height: 52px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-header {
@@ -178,6 +178,12 @@
     text-align: center;
     border-radius: 15px;
     border: 1px solid rgba(28, 34, 37, 0.1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-tel:hover,
+  .mobile-menu-tel:focus {
+    border-color: #ecd979;
   }
 
   .mobile-menu-list {
@@ -244,7 +250,7 @@
       font-size: 14px;
       line-height: 1.43;
       max-width: 193px;
-      min-height: 48 px;
+      min-height: 48px;
     }
 
     @media screen and (min-resolution: 192dpi),
@@ -323,9 +329,11 @@
   }
 
   .address-tel-link {
-    display: block;
-    padding: 14px 28px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 193px;
+    min-height: 48px;
     font-size: 14px;
     line-height: 1.43;
     text-transform: uppercase;
