@@ -1,0 +1,317 @@
+/* ---------------------BACKGROUND--------------------- */
+.background-image {
+  background-image: url(../img/mobile/mb-green.jpg);
+  min-height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 80px;
+  background-size: 375px 550px;
+}
+
+/* ------------------------SECTION--------------------- */
+.your-order-section {
+  padding-bottom: 75px;
+}
+
+.product-item {
+  display: none;
+}
+
+/* -------------------------TITLE----------------------- */
+.your-order-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+  word-wrap: break-word;
+  margin-bottom: 40px;
+}
+
+.your-order-span {
+  color: #ecd979;
+}
+
+/* -----------------FORM----------------- */
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.section-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-textarea,
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background: transparent;
+  margin-bottom: 20px;
+  color: #fcf9f9;
+}
+
+.form-textarea {
+  margin-bottom: 40px;
+  height: 196px;
+}
+
+/* --------------BUTTON-------------- */
+.order-btn {
+  padding: 14px 36px;
+  border-radius: 15px;
+  border: 1px rgba(252, 249, 249, 0.1) solid;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background: none;
+  color: #fcf9f9;
+  font-size: 14px;
+  font-family: Manrope;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.svg-btn {
+  width: 23px;
+  height: 22px;
+  fill: #ecd979;
+  flex-shrink: 0;
+}
+
+/* -----------------------MEDIA---------------------- */
+
+@media screen and (min-width: 768px) {
+  /* ---------------------BACKGROUND--------------------- */
+  .background-image {
+    background-image: url(../img/tablet/tb-green.jpg);
+    width: 768px;
+    height: 776px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-position: center top;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .your-order-section {
+    background-image: url(../img/tablet/tb-order-orn.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: 95%;
+    padding-bottom: 50px;
+    background-size: 323px 484px;
+  }
+
+  /* ------------------CONTENT OVER IMAGE-------------------- */
+  .content-over-image {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .content-over-image:last-child {
+    gap: 0;
+  }
+
+  /* ----------------------PRODUCT ITEM----------------------- */
+  .product-section {
+    display: flex;
+  }
+
+  .product-item {
+    display: inline;
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin: 0 0 79px 98px;
+    width: 638px;
+    height: 521px;
+  }
+
+  /* ------------------------SECTION FORM------------------------ */
+  .section-form {
+    display: flex;
+    width: 508px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+  }
+
+  /* -------------------------TITLE----------------------- */
+  .your-order-title {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 58px;
+    line-height: 1.32;
+    letter-spacing: 0.03em;
+    width: 542px;
+  }
+
+  .your-order-title {
+    font-size: 44px;
+  }
+}
+
+/* ---------------------------MEDIA DESCTOP------------------------- */
+@media screen and (min-width: 1280px) {
+  /* ---------BACKGROUND--------- */
+  .background-image {
+    background-image: url(../img/desctop_1280/ds12-green.jpg);
+    width: 100%;
+    height: 776px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-position: center;
+    background-position-y: top;
+    margin-bottom: 150px;
+  }
+
+  /* ----------CONTENT OVER IMAGE--------- */
+  .content-over-image {
+    display: flex;
+    margin: 0 auto;
+    width: 1079px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    align-items: start;
+    padding: 0 80px 0 44px;
+  }
+
+  .content-over-image:last-child {
+    gap: 50px;
+  }
+
+  /*---------YOUR ORDER SECTION-----------*/
+  .product-item {
+    display: inline;
+    content: url(../img/ds-order.jpg);
+    width: 524px;
+    height: 521px;
+    margin: 0;
+  }
+
+  /* ----------TEXT SECTION--------- */
+  .text-section {
+    max-width: 542px;
+  }
+
+  .section-form {
+    margin-bottom: 0;
+  }
+
+  .product-item {
+    background-size: 289px 484px;
+  }
+
+  img {
+    max-width: none;
+  }
+
+  .your-order-section {
+    background-position-x: left;
+    background-position-y: 77%;
+  }
+  .your-order-title {
+    width: 542px;
+  }
+}
+
+/* ----------------------PRODUCT ITEM----------------------- */
+.product-section {
+  display: flex;
+}
+
+.product-item {
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* form-container */
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* ----------------------Media desctop 1440--------------------- */
+@media screen and (min-width: 1440px) {
+  .background-image {
+    background-image: url(../img/desctop_1440/ds14-green@2x.jpg);
+    width: 1440px;
+    height: 776px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background-position: center;
+    background-position-y: top;
+  }
+
+  .your-order-section {
+    background-image: url(../img/desctop_1440/ds14-order-orn-min.png);
+  }
+
+  .your-order-title {
+    width: 666px;
+    height: 174px;
+  }
+}
+
+/* RETINA AND ELSE */
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .background-image {
+    background-image: url(../img/mobile/mb-green@2x.jpg);
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .background-image {
+    background-image: url(../img/tablet/tb-green@2x.jpg);
+  }
+
+  .product-item {
+    content: url(../img/tablet/tb-order@2x.jpg);
+  }
+
+  .your-order-section {
+    background-image: url(../img/tablet/tb-order-orn@2x.png);
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 1280px) {
+  .background-image {
+    background-image: url(../img/desctop_1280/ds12-green@2xjpg.jpg);
+  }
+
+  .product-item {
+    content: url(../img/ds-order@2x.jpg);
+  }
+
+  .your-order-section {
+    background-image: url(../img/desctop_1280/ds12-order-orn@2x.png);
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 1440px) {
+  .background-image {
+    background-image: url(../img/desctop_1440/ds14-green@2x.jpg);
+  }
+
+  .your-order-section {
+    background-image: url(../img/desctop_1440/ds14-order-orn@2x.png);
+  }
+}
