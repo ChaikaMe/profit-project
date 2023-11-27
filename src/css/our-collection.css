@@ -4,7 +4,7 @@
   background-position-x: 1%;
   background-position-y: 12%;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
@@ -72,7 +72,7 @@
     background-position-x: 0%;
     background-position-y: 16%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -127,7 +127,7 @@
     background-position-x: 0%;
     background-position-y: 27%;
     padding-top: 75px;
-    padding-bottom: 75px;
+    padding-bottom: 150px;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),

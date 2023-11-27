@@ -13,10 +13,7 @@
     max-width: 375px;
    
 }
-.container{
-    margin-right: auto;
-    margin-left: auto;
-}
+
 .about-title{
         font-size: 32px;
         font-weight: 500;
@@ -60,12 +57,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         padding-bottom: 50px;
     }
 
-
- .container {
-        padding-left: 32px;
-        padding-right: 32px;
-        min-width: 768px;
-        }
 .about-image{
     margin-top: 40px;
 }
@@ -110,13 +101,7 @@ justify-content: center;
     margin-right: auto;
 }
 
-.container {
-    min-width: 1280px;
-    padding-left: 100px;
-    padding-right: 100px;
-    }
-
-    .about-image{
+.about-image{
     margin-top: 0;
 }
 }
