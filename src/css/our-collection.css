@@ -3,6 +3,8 @@
   background-repeat: no-repeat;
   background-position-x: 1%;
   background-position-y: 12%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
@@ -69,6 +71,8 @@
     background-image: url(../img/tablet/tb-collection-orn.png);
     background-position-x: 0%;
     background-position-y: 16%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -122,6 +126,8 @@
     background-image: url(../img/desctop_1280/ds12-collection-orn.png);
     background-position-x: 0%;
     background-position-y: 27%;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -148,5 +154,8 @@
 @media screen and (min-width: 1440px) {
   .our-collection-container {
     max-width: 1440px;
+  }
+  .our-collection-item {
+    max-width: 400px;
   }
 }
