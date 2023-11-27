@@ -1,5 +1,5 @@
 .our-collection {
-  background-image: url(./img/mobile/mb-collection-orn.png);
+  background-image: url(../img/mobile/mb-collection-orn.png);
   background-repeat: no-repeat;
   background-position-x: 1%;
   background-position-y: 12%;
@@ -10,7 +10,7 @@
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
   .our-collection {
-    background-image: url(./img/mobile/mb-collection-orn@2x.png);
+    background-image: url(../img/mobile/mb-collection-orn@2x.png);
     background-size: 72px 177px;
   }
 }
@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 768px) {
   .our-collection {
-    background-image: url(./img/tablet/tb-collection-orn.png);
+    background-image: url(../img/tablet/tb-collection-orn.png);
     background-position-x: 0%;
     background-position-y: 16%;
     padding-top: 50px;
@@ -78,7 +78,7 @@
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .our-collection {
-      background-image: url(./img/tablet/tb-collection-orn@2x.png);
+      background-image: url(../img/tablet/tb-collection-orn@2x.png);
       background-size: 114px 300px;
     }
   }
@@ -123,7 +123,7 @@
 
 @media screen and (min-width: 1280px) {
   .our-collection {
-    background-image: url(./img/desctop_1280/ds12-collection-orn.png);
+    background-image: url(../img/desctop_1280/ds12-collection-orn.png);
     background-position-x: 0%;
     background-position-y: 27%;
     padding-top: 75px;
@@ -133,7 +133,7 @@
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .our-collection {
-      background-image: url(./img/desctop_1280/ds12-collection-orn@2x.png);
+      background-image: url(../img/desctop_1280/ds12-collection-orn@2x.png);
       background-size: 169px 300px;
     }
   }
