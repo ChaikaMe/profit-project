@@ -55,7 +55,6 @@ screen and (min-resolution: 2dppx) {
 .nav-list-link:hover,
 .nav-list-link:focus {
     color: #ecd979;
-    outline: none;
 }
 
 /* ================/MOBILE FOOTER================ */
