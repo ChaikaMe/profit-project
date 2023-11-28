@@ -4,13 +4,13 @@
   min-height: 550px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 80px;
   background-size: 375px 550px;
 }
 
 /* ------------------------SECTION--------------------- */
 .your-order-section {
-  padding-bottom: 75px;
+  padding-bottom: 40px;
+  padding-top: 80px;
 }
 
 .product-item {
@@ -70,7 +70,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  background: none;
+  background: transparent;
   color: #fcf9f9;
   font-size: 14px;
   font-family: Manrope;
@@ -99,7 +99,6 @@
     position: relative;
     background-position: center top;
     margin: 0 auto;
-    margin-bottom: 100px;
   }
 
   .your-order-section {
@@ -109,6 +108,7 @@
     background-position-y: 95%;
     padding-bottom: 50px;
     background-size: 323px 484px;
+    padding-top: 100px;
   }
 
   /* ------------------CONTENT OVER IMAGE-------------------- */
@@ -144,7 +144,7 @@
     width: 508px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    /* gap: 20px; */
     box-sizing: border-box;
     margin-bottom: 100px;
   }
@@ -154,14 +154,9 @@
     font-size: 44px;
     font-style: normal;
     font-weight: 500;
-    line-height: 58px;
     line-height: 1.32;
     letter-spacing: 0.03em;
     width: 542px;
-  }
-
-  .your-order-title {
-    font-size: 44px;
   }
 }
 
@@ -177,9 +172,12 @@
     position: relative;
     background-position: center;
     background-position-y: top;
-    margin-bottom: 150px;
   }
 
+  .your-order-section {
+    padding-top: 150px;
+    padding-bottom: 75px;
+  }
   /* ----------CONTENT OVER IMAGE--------- */
   .content-over-image {
     display: flex;

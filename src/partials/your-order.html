@@ -1,7 +1,7 @@
 <div class="background-image"></div>
 
-<section class="your-order-section container">
-  <div class="content-over-image">
+<section class="your-order-section">
+  <div class="content-over-image container">
     <div class="product-section">
       <img src="./img/tablet/tb-order.jpg" alt="product" class="product-item" />
     </div>
@@ -20,6 +20,8 @@
             required
             placeholder="Enter your full name"
             autocomplete="off"
+            pattern="[A-Za-z\s]{3,}"
+            title="Please enter at least 3 characters, using only letters and spaces."
           />
 
           <input
@@ -30,6 +32,7 @@
             required
             placeholder="Enter your email"
             autocomplete="off"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           />
 
           <textarea
