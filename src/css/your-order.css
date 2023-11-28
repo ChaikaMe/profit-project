@@ -249,7 +249,7 @@
 /* ----------------------Media desctop 1440--------------------- */
 @media screen and (min-width: 1440px) {
   .background-image {
-    background-image: url(../img/desctop_1440/ds14-green@2x.jpg);
+    background-image: url(../img/desctop_1440/ds14-green.jpg);
     width: 1440px;
     height: 776px;
     background-repeat: no-repeat;
