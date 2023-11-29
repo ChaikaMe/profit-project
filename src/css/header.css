@@ -56,7 +56,6 @@
 .social-list-link:hover,
 .social-list-link:focus {
   border-color: #ecd979;
-  outline: none;
 }
 
 .social-list-link {
@@ -314,7 +313,6 @@
   .nav-list-link:hover,
   .nav-list-link:focus {
     color: #ecd979;
-    outline: none;
   }
 
   .logo-nav {
@@ -347,7 +345,6 @@
   .address-tel-link:hover,
   .address-tel-link:focus {
     border-color: #ecd979;
-    outline: none;
   }
 }
 
