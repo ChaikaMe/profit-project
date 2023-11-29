@@ -62,6 +62,7 @@
 .content-img-text {
     display: none;
 }
+
 /* ==============*****TABLET*****========== */
 @media screen and (min-width: 768px) {
     .container {
@@ -115,9 +116,82 @@
         align-items: center;
         gap: 16px;  
     }
-    .content-icon {
+      .content-icon {
         fill: #ECD979;
+        animation: rotate 6s infinite linear;
+      }
+      
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      /* ======scroll-down===== */
+    .scroll-down {
+        position: absolute;
+        bottom: 20px;
+         left: 70%;
+        margin-left: -30px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #FCF9F9;
+        border-radius: 50%;
+        animation: scroll-down 2s infinite;
+
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     }
+    
+    @keyframes scroll-down {
+        0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(10px);
+        }
+        100% {
+        transform: translateY(0);
+        }
+    }
+    .scroll-down:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-left: -8px;
+        margin-top: -6px;
+        border-left: 2px solid #FCF9F9;
+        border-bottom: 2px solid#FCF9F9;
+        transform: rotate(-45deg);
+        width: 16px;
+        height: 16px;
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .scroll-down:hover,
+    .scroll-down:focus{
+        animation-play-state: paused;
+        border: 2px solid #ECD979;
+    }
+    
+    .scroll-down:active:before {
+        transform: translateY(2px);
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+    
+    .scroll-down:hover:before,
+    .scroll-down:focus:before {
+        transform: rotate(-45deg) scale(1.2);
+        border-color: #ECD979;
+    }
+
+    
 
     .content-star-hand {
         position: absolute;
@@ -152,6 +226,8 @@
         top: 0; 
     }
 }
+
+
 /* ==============*****desktop 1280px*****========== */
 @media screen and (min-width: 1280px) {
     .container {
@@ -195,6 +271,11 @@
     .content-img-text {
         height: 544px;
     }
+
+    .scroll-down {
+        left: 60%;
+        margin-left: -20px;
+    }
 }   
 
 /* ==============*****desktop 1440px *****========== */
@@ -214,4 +295,8 @@
         justify-content: space-between; 
     }
 
-}
+    .scroll-down {
+        left: 52%;
+        margin-left: -20px;
+    }
+}   
