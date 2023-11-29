@@ -6,6 +6,10 @@
   padding-top: 40px;
   padding-bottom: 80px;
 }
+
+.our-collection-img{
+  border-radius: 4px;
+}
 @media screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
