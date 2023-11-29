@@ -56,6 +56,7 @@
 .form-textarea {
   margin-bottom: 40px;
   height: 196px;
+  resize: none;
 }
 
 .form-input:focus,
@@ -161,9 +162,6 @@
     margin-bottom: 100px;
   }
 
-  .form-textarea {
-    resize: none;
-  }
   /* -------------------------TITLE----------------------- */
   .your-order-title {
     font-size: 44px;
