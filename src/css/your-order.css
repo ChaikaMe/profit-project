@@ -32,11 +32,6 @@
 }
 
 /* -----------------FORM----------------- */
-.form-container {
-  display: flex;
-  justify-content: center;
-}
-
 .section-form {
   display: flex;
   flex-direction: column;
@@ -50,10 +45,12 @@
   padding: 14px 16px;
   box-sizing: border-box;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  outline: 1px solid rgba(252, 249, 249, 0.1);
+  border: none;
   background: transparent;
   margin-bottom: 20px;
   color: #fcf9f9;
+  transition: outline-color 0.5s ease-in-out;
 }
 
 .form-textarea {
@@ -61,11 +58,21 @@
   height: 196px;
 }
 
+.form-input:focus,
+.form-textarea:focus {
+  animation: pulse 2s infinite;
+}
+
+.form-input:hover,
+.form-textarea:hover {
+  outline: 2px dashed #ecd979;
+}
 /* --------------BUTTON-------------- */
 .order-btn {
   padding: 14px 36px;
   border-radius: 15px;
-  border: 1px rgba(252, 249, 249, 0.1) solid;
+  outline: 1px rgba(252, 249, 249, 0.1) solid;
+  border: none;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -77,6 +84,7 @@
   font-weight: 600;
   text-transform: uppercase;
   word-wrap: break-word;
+  transition: outline-color 0.5s ease-in-out;
 }
 
 .svg-btn {
@@ -86,6 +94,10 @@
   flex-shrink: 0;
 }
 
+.order-btn:hover,
+.order-btn:focus {
+  outline-color: #ecd979;
+}
 /* -----------------------MEDIA---------------------- */
 
 @media screen and (min-width: 768px) {
@@ -149,6 +161,9 @@
     margin-bottom: 100px;
   }
 
+  .form-textarea {
+    resize: none;
+  }
   /* -------------------------TITLE----------------------- */
   .your-order-title {
     font-size: 44px;
@@ -240,12 +255,6 @@
   flex-shrink: 0;
 }
 
-/* form-container */
-.form-container {
-  display: flex;
-  justify-content: flex-start;
-}
-
 /* ----------------------Media desctop 1440--------------------- */
 @media screen and (min-width: 1440px) {
   .background-image {
@@ -311,5 +320,21 @@
 
   .your-order-section {
     background-image: url(../img/desctop_1440/ds14-order-orn@2x.png);
+  }
+}
+
+/* KEYFRAME FOR INPUTS */
+@keyframes pulse {
+  0% {
+    outline-width: 2px;
+    outline-color: #ffffff;
+  }
+  50% {
+    outline-width: 2px;
+    outline-color: #ffcc00;
+  }
+  100% {
+    outline-width: 2px;
+    outline-color: #ffffff;
   }
 }
